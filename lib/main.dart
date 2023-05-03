@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_portfolio/Dice/my_dice.dart';
 import 'package:flutter_application_portfolio/my_timer.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -52,13 +53,16 @@ class _MyAppState extends State<MyApp> {
         label: 'pick',
         backgroundColor: Colors.amber));
     items.add(const BottomNavigationBarItem(
-        icon: Icon(Icons.person_2_rounded),
-        label: 'person',
+        icon: FaIcon(FontAwesomeIcons.comment),
+        label: 'chat',
         backgroundColor: Colors.blueAccent));
 
     // 첫 페이지 지정
     bodyPage = const Center(
-      child: Text('asd'),
+      child: FaIcon(
+        FontAwesomeIcons.delicious,
+        size: 40,
+      ),
     );
   }
 
