@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_portfolio/my_dice.dart';
+import 'package:flutter_application_portfolio/Dice/my_dice.dart';
 import 'package:flutter_application_portfolio/my_timer.dart';
 
 void main() {
