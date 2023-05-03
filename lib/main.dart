@@ -22,7 +22,7 @@ class _MyAppState extends State<MyApp> {
   List<dynamic> pages = [
     const MyTimer(),
     const MyDice(),
-    const MyTimer(),
+    const MyDice(),
     const MyTimer(),
   ];
 
@@ -38,9 +38,13 @@ class _MyAppState extends State<MyApp> {
     // TODO: implement initState
     super.initState();
     items.add(const BottomNavigationBarItem(
-        icon: Icon(Icons.home), label: 'home', backgroundColor: Colors.red));
+        icon: Icon(Icons.home),
+        activeIcon: Icon(Icons.home_outlined),
+        label: 'home',
+        backgroundColor: Colors.red));
     items.add(const BottomNavigationBarItem(
         icon: Icon(Icons.access_time_rounded),
+        activeIcon: Icon(Icons.access_time_filled_rounded),
         label: 'timer',
         backgroundColor: Colors.brown));
     items.add(const BottomNavigationBarItem(
