@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_portfolio/Dice/my_dice.dart';
 import 'package:flutter_application_portfolio/my_timer.dart';
+import 'package:flutter_application_portfolio/Chat/my_chat.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 //sss
@@ -23,9 +24,9 @@ class _MyAppState extends State<MyApp> {
   late Widget bodyPage;
   List<dynamic> pages = [
     const MyTimer(),
-    const MyDice(),
-    const MyDice(),
     const MyTimer(),
+    const MyDice(),
+    MyChat(),
   ];
 
   void movePage(int page) {
